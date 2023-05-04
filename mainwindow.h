@@ -26,6 +26,7 @@ private:
     void OpenUART();
     void CloseUART();
     void GetDelay(unsigned int ID);
+    void SetDelay(unsigned int ID);
     int m_SerialPort{};
     std::shared_ptr<DelaySettings> m_DelaySettings;
 };

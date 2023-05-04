@@ -65,6 +65,11 @@
             <height>30</height>
            </size>
           </property>
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
           <property name="text">
            <string>Delay Settings</string>
           </property>
@@ -117,6 +122,19 @@
          </widget>
         </item>
         <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
          <widget class="QLineEdit" name="lineEdit_Delay0">
           <property name="toolTip">
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Delay from ARM pulse in milliseconds.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -148,6 +166,19 @@
            <string>DELAY 1</string>
           </property>
          </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
         </item>
         <item>
          <widget class="QLineEdit" name="lineEdit_Delay1">
@@ -183,6 +214,19 @@
          </widget>
         </item>
         <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
          <widget class="QLineEdit" name="lineEdit_Delay2">
           <property name="toolTip">
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Delay from ARM pulse in milliseconds.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -214,6 +258,19 @@
            <string>DELAY 3</string>
           </property>
          </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
         </item>
         <item>
          <widget class="QLineEdit" name="lineEdit_Delay3">
@@ -249,6 +306,19 @@
          </widget>
         </item>
         <item>
+         <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
          <widget class="QLineEdit" name="lineEdit_Delay4">
           <property name="toolTip">
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Delay from ARM pulse in milliseconds.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -280,6 +350,19 @@
            <string>DELAY 5</string>
           </property>
          </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
         </item>
         <item>
          <widget class="QLineEdit" name="lineEdit_Delay5">
@@ -332,6 +415,11 @@
             <width>16777215</width>
             <height>30</height>
            </size>
+          </property>
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
           </property>
           <property name="text">
            <string>Channel Settings</string>
@@ -1025,8 +1113,13 @@
          <height>80</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
-        <string>Stop</string>
+        <string>STOP</string>
        </property>
       </widget>
      </item>
@@ -1038,8 +1131,13 @@
          <height>80</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
-        <string>Start</string>
+        <string>START</string>
        </property>
       </widget>
      </item>
@@ -1070,19 +1168,6 @@
       </spacer>
      </item>
     </layout>
-   </widget>
-   <widget class="QLabel" name="label_StatusBar">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>610</y>
-      <width>771</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>STATUS</string>
-    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
