@@ -18,13 +18,17 @@ public:
 private slots:
     void on_pushButton_GET_DelaySettings_clicked();
     void on_pushButton_SET_DelaySettings_clicked();
-    void on_pushButton_StartTrigger_clicked();
-    void on_pushButton_StopTrigger_clicked();
+    void on_pushButton_StartTrigger_clicked() const;
+    void on_pushButton_StopTrigger_clicked() const;
+
+    void on_actionExit_2_triggered();
+
+    void on_pushButton_SET_ChannelSettings_clicked();
 
 private:
     Ui::MainWindow *ui;
     void OpenUART();
-    void CloseUART();
+    void CloseUART() const;
     void GetDelay(unsigned int ID);
     void SetDelay(unsigned int ID);
     int m_SerialPort{};

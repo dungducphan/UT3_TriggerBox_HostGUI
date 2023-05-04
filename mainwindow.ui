@@ -440,13 +440,6 @@
          </spacer>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_GET_ChannelSettings">
-          <property name="text">
-           <string>GET</string>
-          </property>
-         </widget>
-        </item>
-        <item>
          <widget class="QPushButton" name="pushButton_SET_ChannelSettings">
           <property name="text">
            <string>SET</string>
@@ -489,31 +482,6 @@
             <string>Delay 0</string>
            </property>
           </item>
-          <item>
-           <property name="text">
-            <string>Delay 1</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Delay 2</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Delay 3</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Delay 4</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Delay 5</string>
-           </property>
-          </item>
          </widget>
         </item>
        </layout>
@@ -549,32 +517,7 @@
          <widget class="QComboBox" name="comboBox_E4">
           <item>
            <property name="text">
-            <string>Delay 0</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
             <string>Delay 1</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Delay 2</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Delay 3</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Delay 4</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Delay 5</string>
            </property>
           </item>
          </widget>
@@ -594,7 +537,7 @@
         <item>
          <widget class="QLabel" name="label_17">
           <property name="text">
-           <string>PE5</string>
+           <string>PB0</string>
           </property>
          </widget>
         </item>
@@ -609,17 +552,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QComboBox" name="comboBox_E5">
-          <item>
-           <property name="text">
-            <string>Delay 0</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Delay 1</string>
-           </property>
-          </item>
+         <widget class="QComboBox" name="comboBox_B0">
           <item>
            <property name="text">
             <string>Delay 2</string>
@@ -657,7 +590,7 @@
         <item>
          <widget class="QLabel" name="label_18">
           <property name="text">
-           <string>PC4</string>
+           <string>PB1</string>
           </property>
          </widget>
         </item>
@@ -672,17 +605,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QComboBox" name="comboBox_C4">
-          <item>
-           <property name="text">
-            <string>Delay 0</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Delay 1</string>
-           </property>
-          </item>
+         <widget class="QComboBox" name="comboBox_B1">
           <item>
            <property name="text">
             <string>Delay 2</string>
@@ -720,7 +643,7 @@
         <item>
          <widget class="QLabel" name="label_19">
           <property name="text">
-           <string>PC5</string>
+           <string>PB2</string>
           </property>
          </widget>
         </item>
@@ -735,17 +658,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QComboBox" name="comboBox_C5">
-          <item>
-           <property name="text">
-            <string>Delay 0</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Delay 1</string>
-           </property>
-          </item>
+         <widget class="QComboBox" name="comboBox_B2">
           <item>
            <property name="text">
             <string>Delay 2</string>
@@ -783,7 +696,7 @@
         <item>
          <widget class="QLabel" name="label_22">
           <property name="text">
-           <string>PC6</string>
+           <string>PB3</string>
           </property>
          </widget>
         </item>
@@ -798,17 +711,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QComboBox" name="comboBox_C6">
-          <item>
-           <property name="text">
-            <string>Delay 0</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Delay 1</string>
-           </property>
-          </item>
+         <widget class="QComboBox" name="comboBox_B3">
           <item>
            <property name="text">
             <string>Delay 2</string>
@@ -846,7 +749,7 @@
         <item>
          <widget class="QLabel" name="label_21">
           <property name="text">
-           <string>PD0</string>
+           <string>PB4</string>
           </property>
          </widget>
         </item>
@@ -861,17 +764,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QComboBox" name="comboBox_D0">
-          <item>
-           <property name="text">
-            <string>Delay 0</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Delay 1</string>
-           </property>
-          </item>
+         <widget class="QComboBox" name="comboBox_B4">
           <item>
            <property name="text">
             <string>Delay 2</string>
@@ -909,7 +802,7 @@
         <item>
          <widget class="QLabel" name="label_23">
           <property name="text">
-           <string>PD1</string>
+           <string>PB5</string>
           </property>
          </widget>
         </item>
@@ -924,17 +817,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QComboBox" name="comboBox_D1">
-          <item>
-           <property name="text">
-            <string>Delay 0</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Delay 1</string>
-           </property>
-          </item>
+         <widget class="QComboBox" name="comboBox_B5">
           <item>
            <property name="text">
             <string>Delay 2</string>
@@ -972,7 +855,7 @@
         <item>
          <widget class="QLabel" name="label_20">
           <property name="text">
-           <string>PD2</string>
+           <string>PB6</string>
           </property>
          </widget>
         </item>
@@ -987,17 +870,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QComboBox" name="comboBox_D2">
-          <item>
-           <property name="text">
-            <string>Delay 0</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Delay 1</string>
-           </property>
-          </item>
+         <widget class="QComboBox" name="comboBox_B6">
           <item>
            <property name="text">
             <string>Delay 2</string>
@@ -1035,7 +908,7 @@
         <item>
          <widget class="QLabel" name="label_24">
           <property name="text">
-           <string>PD3</string>
+           <string>PB7</string>
           </property>
          </widget>
         </item>
@@ -1050,17 +923,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QComboBox" name="comboBox_D3">
-          <item>
-           <property name="text">
-            <string>Delay 0</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Delay 1</string>
-           </property>
-          </item>
+         <widget class="QComboBox" name="comboBox_B7">
           <item>
            <property name="text">
             <string>Delay 2</string>
@@ -1167,6 +1030,19 @@
        </property>
       </spacer>
      </item>
+     <item row="1" column="1">
+      <spacer name="horizontalSpacer_20">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
     </layout>
    </widget>
   </widget>
@@ -1183,43 +1059,14 @@
     <property name="title">
      <string>File</string>
     </property>
-    <addaction name="actionConnect"/>
-    <addaction name="actionDisconnect"/>
     <addaction name="separator"/>
-    <addaction name="actionSave_Timestamps"/>
-    <addaction name="separator"/>
-    <addaction name="actionExit"/>
+    <addaction name="actionExit_2"/>
    </widget>
    <addaction name="menuFile"/>
   </widget>
-  <action name="actionConnect">
-   <property name="text">
-    <string>Connect</string>
-   </property>
-  </action>
-  <action name="actionDisconnect">
-   <property name="text">
-    <string>Disconnect</string>
-   </property>
-  </action>
-  <action name="actionExit">
+  <action name="actionExit_2">
    <property name="text">
     <string>Exit</string>
-   </property>
-  </action>
-  <action name="actionAbout">
-   <property name="text">
-    <string>About</string>
-   </property>
-  </action>
-  <action name="actionManual">
-   <property name="text">
-    <string>Manual</string>
-   </property>
-  </action>
-  <action name="actionSave_Timestamps">
-   <property name="text">
-    <string>Save Timestamps</string>
    </property>
   </action>
  </widget>

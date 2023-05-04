@@ -1,8 +1,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
@@ -168,16 +167,51 @@ void MainWindow::on_pushButton_SET_DelaySettings_clicked() {
     }
 }
 
-void MainWindow::on_pushButton_StartTrigger_clicked() {
+void MainWindow::on_pushButton_StartTrigger_clicked() const {
     unsigned char msg[] = {'S', '\r'};
     write(m_SerialPort, msg, sizeof(msg));
 }
 
-void MainWindow::on_pushButton_StopTrigger_clicked() {
+void MainWindow::on_pushButton_StopTrigger_clicked() const {
     unsigned char msg[] = {'P', '\r'};
     write(m_SerialPort, msg, sizeof(msg));
 }
 
-void MainWindow::CloseUART() {
+void MainWindow::CloseUART() const {
     ::close(m_SerialPort);
 }
+
+void MainWindow::on_actionExit_2_triggered() {
+    CloseUART();
+    QCoreApplication::exit();
+}
+
+void MainWindow::on_pushButton_SET_ChannelSettings_clicked() {
+    unsigned char ResetTiming_msg[] = {'C', '\r'};
+    write(m_SerialPort, ResetTiming_msg, sizeof(ResetTiming_msg));
+    usleep(100);
+    unsigned char B0_msg[] = {'B', static_cast<unsigned char>('0' + ui->comboBox_B0->currentIndex()), '0', '\r'};
+    write(m_SerialPort, B0_msg, sizeof(B0_msg));
+    usleep(100);
+    unsigned char B1_msg[] = {'B', static_cast<unsigned char>('0' + ui->comboBox_B1->currentIndex()), '1', '\r'};
+    write(m_SerialPort, B1_msg, sizeof(B1_msg));
+    usleep(100);
+    unsigned char B2_msg[] = {'B', static_cast<unsigned char>('0' + ui->comboBox_B2->currentIndex()), '2', '\r'};
+    write(m_SerialPort, B2_msg, sizeof(B2_msg));
+    usleep(100);
+    unsigned char B3_msg[] = {'B', static_cast<unsigned char>('0' + ui->comboBox_B3->currentIndex()), '3', '\r'};
+    write(m_SerialPort, B3_msg, sizeof(B3_msg));
+    usleep(100);
+    unsigned char B4_msg[] = {'B', static_cast<unsigned char>('0' + ui->comboBox_B4->currentIndex()), '4', '\r'};
+    write(m_SerialPort, B4_msg, sizeof(B4_msg));
+    usleep(100);
+    unsigned char B5_msg[] = {'B', static_cast<unsigned char>('0' + ui->comboBox_B5->currentIndex()), '5', '\r'};
+    write(m_SerialPort, B5_msg, sizeof(B5_msg));
+    usleep(100);
+    unsigned char B6_msg[] = {'B', static_cast<unsigned char>('0' + ui->comboBox_B6->currentIndex()), '6', '\r'};
+    write(m_SerialPort, B6_msg, sizeof(B6_msg));
+    usleep(100);
+    unsigned char B7_msg[] = {'B', static_cast<unsigned char>('0' + ui->comboBox_B7->currentIndex()), '7', '\r'};
+    write(m_SerialPort, B7_msg, sizeof(B7_msg));
+}
+
