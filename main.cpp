@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include <QApplication>
 
+unsigned char RETURN_SYMBOL = 13;
+
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
     MainWindow w;

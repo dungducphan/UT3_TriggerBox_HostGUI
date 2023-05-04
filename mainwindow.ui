@@ -1071,6 +1071,19 @@
      </item>
     </layout>
    </widget>
+   <widget class="QLabel" name="label_StatusBar">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>610</y>
+      <width>771</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>STATUS</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -1094,7 +1107,6 @@
    </widget>
    <addaction name="menuFile"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
   <action name="actionConnect">
    <property name="text">
     <string>Connect</string>

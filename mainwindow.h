@@ -24,7 +24,8 @@ private slots:
 private:
     Ui::MainWindow *ui;
     void OpenUART();
-    void CloseUART() const;
+    void CloseUART();
+    void GetDelay(unsigned int ID);
     int m_SerialPort{};
     std::shared_ptr<DelaySettings> m_DelaySettings;
 };
