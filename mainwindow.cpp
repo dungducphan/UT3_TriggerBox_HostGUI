@@ -213,5 +213,17 @@ void MainWindow::on_pushButton_SET_ChannelSettings_clicked() {
     usleep(100);
     unsigned char B7_msg[] = {'B', static_cast<unsigned char>('0' + ui->comboBox_B7->currentIndex()), '7', '\r'};
     write(m_SerialPort, B7_msg, sizeof(B7_msg));
+    usleep(100);
+    unsigned char D0_msg[] = {'D', static_cast<unsigned char>('0' + ui->comboBox_D0->currentIndex()), '0', '\r'};
+    write(m_SerialPort, D0_msg, sizeof(D0_msg));
+    usleep(100);
+    unsigned char D1_msg[] = {'D', static_cast<unsigned char>('0' + ui->comboBox_D1->currentIndex()), '1', '\r'};
+    write(m_SerialPort, D1_msg, sizeof(D1_msg));
+    usleep(100);
+    unsigned char D2_msg[] = {'D', static_cast<unsigned char>('0' + ui->comboBox_D2->currentIndex()), '2', '\r'};
+    write(m_SerialPort, D2_msg, sizeof(D2_msg));
+    usleep(100);
+    unsigned char D3_msg[] = {'D', static_cast<unsigned char>('0' + ui->comboBox_D3->currentIndex()), '3', '\r'};
+    write(m_SerialPort, D3_msg, sizeof(D3_msg));
 }
 
